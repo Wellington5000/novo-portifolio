@@ -1,0 +1,33 @@
+header {
+  padding: 1rem 6.25rem 1rem 8.125rem;
+  display: flex;
+  justify-content: space-between;
+
+  .h-logo {
+    font-weight: bold;
+    font-size: 1.875rem;
+    background-clip: text;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #7450E9 50%, rgba(149, 44, 175, 0.00) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .h-actions {
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+
+    .h-action {
+      font-size: 1rem;
+      color: #7450E9;
+      font-weight: 700;
+      text-align: center;
+      font-family: Inter;
+      font-style: normal;
+      line-height: normal;
+      color: var(--primary-color);
+    }
+  }
+}
