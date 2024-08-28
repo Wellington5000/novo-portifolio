@@ -16,29 +16,22 @@ export class RobotComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.robotAnimation();
+
   }
 
-  ngAfterViewInit(): void {
-    const tl = gsap.timeline({ repeat: -1 })
-    const robot = document.querySelector('.r-guide');
+  robotAnimation(): void {
+    const body = document.querySelector('body');
+    const robot = document.querySelector('#robot');
 
-    gsap.fromTo(robot,
-      { x: -500, y: 0 },
-      { x: 200, y: 60, duration: 3 },
-    )
-
-    tl.fromTo(robot,
-      { x: 200, y: 60 },
-      { x: 700, y: 350, duration: 3 },
-      '+=20'
-    ).fromTo(robot,
-      { x: 700, y: 350 },
-      { x: 200, y: 300, rotate: -25, duration: 3 },
-      '+=5'
-    ).fromTo(robot,
-      { x: 200, y: 300 },
-      { x: 200, y: 60, rotate: 360, duration: 3 },
-      '+=5'
-    )
+    body?.addEventListener('mousemove', (dets) => {
+      console.log(gsap)
+      gsap.to(robot, {
+        x: dets.x + 20,
+        y: dets.y + 20,
+        duration: 10,
+        ease: "back.out",
+      });
+    });
   }
 }

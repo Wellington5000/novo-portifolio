@@ -7,9 +7,9 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  lottieOptions: AnimationOptions = {
-    path: '/assets/json/background-2.json',
-  }
+  // lottieOptions: AnimationOptions = {
+  //   path: '/assets/json/background-2.json',
+  // }
 
   title = 'wt-portifolio';
 }

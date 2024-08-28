@@ -1,15 +1,45 @@
-<section class="s-container">
-  <div class="s-card">
-    <div class="s-content">
-      <p class="s-text">Uma ótima noite pra você, eu sou o
-        <span class="h-text">Wellington Teixeira!</span>
-      </p>
-      <p class="g-text">Desenvolvedor Front-End</p>
-      <div class="s-buttons">
-        <button class="primary-button">Download CV</button>
-        <button class="primary-button">Contato</button>
+<div class="a-main">
+  <section class="s-container">
+    <div class="s-card">
+      <div class="s-content">
+        <p class="s-text">Uma ótima noite pra você, eu sou o
+          <span class="h-text">Wellington Teixeira!</span>
+        </p>
+        <p class="g-text">Desenvolvedor de software - Graduado em Ciência da Computação - Pós-graduando em Desenvolvimento Frontend - Mais de 3 anos de experiência profissional</p>
+        <div class="s-buttons">
+          <button class="primary-button" (click)="rotateAnimation('BACK')">Ler mais</button>
+          <button class="primary-button">Download CV</button>
+        </div>
+      </div>
+      <ng-lottie [options]="lottieOptions" width="500px" height="500px"></ng-lottie>
+    </div>
+    <div class="card-back">
+      <div class="s-content">
+        <div class="a-about">
+          <p class="g-text">
+            Olá! Sou um desenvolvedor frontend com mais de 3 anos de experiência profissional na criação de interfaces web dinâmicas e responsivas. 
+            Sou formado em Ciência da Computação pela Universidade Estadual do Piauí, 
+            o que me proporcionou uma base sólida em princípios de programação e desenvolvimento de software.
+          </p>
+          <p class="g-text">
+            Minha jornada profissional inclui a realização de vários cursos na plataforma Alura, 
+            onde aprimorei minhas habilidades e acompanhei as últimas tendências e tecnologias do mercado. 
+            Atualmente, estou aprofundando meus conhecimentos através de uma pós-graduação em Desenvolvimento Frontend na Faculdade Anhanguera, 
+            com o objetivo de me manter atualizado e oferecer soluções inovadoras e eficientes.
+          </p>
+          <p class="g-text">
+            Estou sempre em busca de desafios que me permitam crescer como profissional e contribuir para projetos que façam a diferença. 
+            Se você está interessado em saber mais sobre meu trabalho ou em colaborar em um projeto, fique à vontade para entrar em contato!
+          </p>
+        </div>
+        <div class="s-buttons">
+          <button class="primary-button" (click)="rotateAnimation('FRONT')">Voltar</button>
+          <button class="primary-button">Download CV</button>
+        </div>
+      </div>
+      <div class="lottie-card">
+        <ng-lottie [options]="studyAnimation" width="350px" height="350px"></ng-lottie>
       </div>
     </div>
-    <ng-lottie [options]="lottieOptions" width="500px" height="500px"></ng-lottie>
-  </div>
-</section>
+  </section>
+</div>

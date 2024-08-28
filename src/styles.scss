@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #7450E9;
+  --primary-color: #00cbd7;
   --secundary-color: #FFFFFF;
   --tertiary-color: #000000;
   --grey: #999999;
@@ -15,9 +15,10 @@
 }
 
 body {
+  overflow-x: hidden;
   min-height: 100vh;
   font-family: var(--font-family);
-  background-color: var(--tertiary-color);
+  background: linear-gradient(#001a47 0%, #3d004d 100%);
 }
 
 a {

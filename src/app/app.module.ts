@@ -8,6 +8,7 @@ import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { ApresentationComponent } from './apresentation/apresentation.component';
 import { RobotComponent } from './robot/robot.component';
+import { NameComponent } from './name/name.component';
 
 export function playerFactory() {
   return player;
@@ -18,7 +19,8 @@ export function playerFactory() {
     AppComponent,
     HeaderComponent,
     ApresentationComponent,
-    RobotComponent
+    RobotComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,
